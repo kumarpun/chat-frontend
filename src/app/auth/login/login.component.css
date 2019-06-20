@@ -1,0 +1,140 @@
+::ng-deep :root{
+    --main-font-color :rgba(255, 255, 255, 0.7);
+}
+
+.login-body{
+    box-shadow: 1px 1px 20px rgb(26, 40, 228, 0.1);
+    font-family: 'Montserrat', sans-serif;
+    border-radius:20px; 
+}
+
+.login-display{
+    background: white;
+    border-radius: 20px 0px 0px 20px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.login{
+
+   display: flex;
+   justify-content: center;
+   width: 100%;
+   min-width: 500px;
+}
+.login-display h1{
+    font-weight: 700;
+    color: rgb(58, 59, 59);
+    font-size: 52px;
+}
+:host {
+ 
+    justify-content: center;
+    margin: 100px 0px;
+}
+.login-form{
+   
+    background: rgb(86, 221, 109);
+    padding: 40px;
+    border-radius: 0px 20px 20px 0px; 
+}
+
+.form-elems{
+    margin: 8px 0;
+}
+.mat-form-field{
+   display: flex;
+   justify-content: center;
+    width: 100px;
+    
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0 0 0;
+}
+
+.fields{
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid var(--main-font-color);
+    color:var(--main-font-color);
+    width: 26em; 
+    margin: 0 auto;
+    padding: 10px;
+    font-weight: 500;
+    outline: none;
+}
+
+.submits button {
+  display: inline;
+ 
+    margin: 4px 6px;
+    text-decoration: none;
+    color:var(--main-font-color);
+    font-weight: 500;
+    border:2px solid var(--main-font-color);
+    padding: 2px 10px;
+    border-radius: 5px;
+    width: 10em;
+    text-align: center;
+}
+
+.submits {
+    
+    display: flex;
+    justify-content: center;
+}
+
+.fpassword{
+    text-decoration: none;
+    color: var(--main-font-color);
+    font-weight: 500;
+}
+
+
+
+
+
+
+@media(max-width : 992px){
+    .fields{
+        width: 18em; 
+        font-size: 16px;
+    }
+
+    .submits a{
+        width: 6em;
+    }
+
+    .login-display h1{
+        font-size: 42px;
+    }
+}
+
+
+@media(max-width : 768px){
+    .login-form{
+        border-radius: 0px 0px 20px 20px; 
+    }
+
+    .login-display{
+        border-radius: 20px 20px 0px 0px; 
+    }
+    
+    .fields{
+        width: 22em; 
+    }
+  
+    .submits a{
+        width: 10em;
+        font-size: 16px;
+    }
+
+    .login-display h1{
+        font-size: 42px;
+        padding-top: 8px; 
+    }
+}

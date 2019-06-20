@@ -1,0 +1,30 @@
+  <div class="login-body row">
+      <div class="login-display col-md-6">
+        <h1>Login</h1>
+      </div>
+    </div>
+      <div class="login-form col-md-6 col-sm-12">
+        <form [formGroup]="loginForm" (ngSubmit)="onSubmit(email.value, password.value)">
+            <mat-form-field class='form-elems login'>
+                <input type="text" matInput placeholder="Email" formControlName="email" #email>
+                <mat-error align="start" *ngIf="formErrors.email" class="form_error">{{ formErrors.email }}</mat-error>
+              </mat-form-field>
+          <mat-form-field class='form-elems login'> 
+            <input [type]="hide ? 'password' : 'text'" matInput placeholder="Password" formControlName="password" #password>
+            <mat-error align="start" *ngIf="formErrors.password" class="form__error">{{ formErrors.password }}</mat-error>
+            <mat-icon matSuffix (click)="hide = !hide">{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+          </mat-form-field>
+          <div class='form-elems submits'>
+              <button type="submit" mat-button>Login</button>
+              <button type="secondary" mat-button>Sign Up</button>
+            </div>
+        
+          <br>
+          <div class='form-elems'>
+            <a href="#" class='fpassword'>Forgot Password?</a>
+          </div>
+        </form>
+      </div>
+    
+ 
+  

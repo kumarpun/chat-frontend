@@ -1,0 +1,31 @@
+<mat-toolbar color="white">
+  <mat-toolbar-row>
+    <button type="button" arial-label="Toggle sidenav" mat-icon-button (click)="drawer.toggle()" color="primary">
+      <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+    </button>
+    <span class="fill-remaining-space"></span>
+  </mat-toolbar-row>
+</mat-toolbar>
+<mat-sidenav-container class="example-container">
+    <mat-sidenav #drawer mode="side" opened role="navigation">
+      <mat-nav-list>
+        <div>
+          <a mat-list-item routerLink='/dashboard/home'><mat-icon mat-list-icon>home</mat-icon>Home</a>
+        </div>
+        <div>
+          <a mat-list-item routerLink='/dashboard/chat'><mat-icon mat-list-icon>people</mat-icon>Chat</a>
+        </div>
+          <div>
+            <a mat-list-item routerLink='#'><mat-icon mat-list-icon>how_to_reg</mat-icon>List of Inventory</a>
+          </div>
+        
+          <button (click)="logout()" mat-menu-item >
+              <mat-icon>exit_to_app</mat-icon>
+              <span >Logout</span>
+            </button>   
+      </mat-nav-list>
+    </mat-sidenav>
+    <mat-sidenav-content>
+      <router-outlet></router-outlet>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
