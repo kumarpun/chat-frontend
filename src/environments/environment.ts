@@ -4,7 +4,6 @@
 
 export const environment = {
   production: false,
-  userUrl: 'http://localhost:8080/api/v1',
   chatUrl: 'http://localhost:3000/chat'
 
 };
