@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { AuthenticationService } from '../services/authentication.service';
+import { AuthService } from '../services/chatt.service';
 import { Router} from '@angular/router';
 
 @Component({
@@ -9,31 +9,24 @@ import { Router} from '@angular/router';
 })
 export class DashboardComponent implements OnInit {
 
-  public role: string;
 
 
   constructor(
     private router: Router,
-    private authservice: AuthenticationService
+    private authservice: AuthService
   ) { }
 
   ngOnInit() {
-    const currentUser = JSON.parse(localStorage.getItem('currentUser'));
-    this.role = currentUser.role;
+    const currentUser = JSON.parse(localStorage.getItem('user'));
+  
 
   }
 logout() {
   this.authservice.logout();
-  this.router.navigate(['/login']);
+  this.router.navigate(['/login1']);
 }
 
-isAdmin() {
-  return this.role.toLowerCase() === 'admin';
-}
 
-isEmployee() {
-  return this.role.toLowerCase() === 'employee';
-}
 
 }
 

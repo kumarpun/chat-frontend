@@ -7,10 +7,14 @@ import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { ChatAppComponent } from '../chat/chat-app/chat-app.component'; 
 import { AuthenticationService } from '../services/authentication.service';
 import { JwtInterceptor, ErrorInterceptor } from '../helpers';
+import { ChatRoomComponent } from './chat-room/chat-room.component';
+import { MessageComponent } from './message/message.component';
 
 @NgModule({
   declarations: [
-    ChatAppComponent
+    ChatAppComponent,
+    ChatRoomComponent,
+    MessageComponent
     ],
   imports: [
     CommonModule,

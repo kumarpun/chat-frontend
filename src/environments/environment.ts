@@ -2,10 +2,13 @@
 // `ng build --prod` replaces `environment.ts` with `environment.prod.ts`.
 // The list of file replacements can be found in `angular.json`.
 
+const BASE_URL = 'http://localhost:8000';
+
 export const environment = {
   production: false,
-  chatUrl: 'http://localhost:3000/chat'
-
+  chatUrl: BASE_URL,
+  backendUrl: `${BASE_URL}/api`,
+  chatPath: '/mean-chat-app.io',
 };
 
 /*

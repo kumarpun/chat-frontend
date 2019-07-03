@@ -1,3 +1,9 @@
-<p>
-  home-main works!
-</p>
+<h1>Hi</h1>
+<p>You're logged!!!</p>
+
+<ul>
+    <li *ngFor="let user of users">
+      ({{user.email}} {{user.name}})
+        <a (click)="deleteUser(user.id)" class="text-danger">Delete</a>
+    </li>
+</ul>

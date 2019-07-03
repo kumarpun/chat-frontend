@@ -20,7 +20,7 @@ export class FormServices {
   public validationMessages() {
     const messages = {
       required: 'This field is required',
-      email: 'This email address is invalid',
+      username: 'This email address is invalid',
       invalid_characters: (matches: any[]) => {
 
         let matchedCharacters = matches;

@@ -1,16 +1,21 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { LoginComponent } from './auth/login/login.component';
+import { Login1Component } from './auth/login1/login1.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 
 const routes: Routes = [
   {
     path: '',
-    component: LoginComponent
+    component: Login1Component
   },
   {
-    path: 'login',
-    component: LoginComponent
+    path: 'login1',
+    component: Login1Component
+  },
+  {
+    path: 'login1',
+    component: Login1Component
   },
   {
     path: 'dashboard',
@@ -22,6 +27,14 @@ const routes: Routes = [
       },
       {
         path: 'chat',
+        loadChildren: './chat/chat.module#ChatModule'
+      },
+      {
+        path: 'chat-room',
+        loadChildren: './chat/chat.module#ChatModule'
+      },
+      {
+        path: 'message',
         loadChildren: './chat/chat.module#ChatModule'
       }
     ]
