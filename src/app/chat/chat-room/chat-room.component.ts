@@ -1,4 +1,4 @@
-import {  OnInit, ElementRef, OnDestroy, Component } from '@angular/core';
+import {  OnInit, ElementRef, Component } from '@angular/core';
 import {
   FormGroup,
   FormBuilder,
@@ -15,7 +15,7 @@ import { ChatService } from '../../services/message1.service';
   templateUrl: './chat-room.component.html',
   styleUrls: ['./chat-room.component.css']
 })
-export class ChatRoomComponent implements OnInit, OnDestroy {
+export class ChatRoomComponent implements OnInit {
 
   messageList: Array<Message>;
   userList: Array<any>;
@@ -57,10 +57,6 @@ export class ChatRoomComponent implements OnInit, OnDestroy {
     this.connectToChat();
   }
 
-  ngOnDestroy() {
-    this.receiveActiveObs.unsubscribe();
-    this.receiveMessageObs.unsubscribe();
-  }
 
   connectToChat(): void {
     let connected = this.chatService.isConnected();
