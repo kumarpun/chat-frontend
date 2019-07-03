@@ -2,7 +2,7 @@
 // `ng build --prod` replaces `environment.ts` with `environment.prod.ts`.
 // The list of file replacements can be found in `angular.json`.
 
-const BASE_URL = 'http://localhost:8000';
+const BASE_URL = 'http://localhost:4000';
 
 export const environment = {
   production: false,
@@ -10,6 +10,7 @@ export const environment = {
   backendUrl: `${BASE_URL}/api`,
   chatPath: '/mean-chat-app.io',
 };
+
 
 /*
  * For easier debugging in development mode, you can import the following file
