@@ -6,7 +6,7 @@ import 'rxjs/add/operator/map';
 import * as io from 'socket.io-client';
 import { Message } from '../models/message.model';
 import { AuthService } from './chatt.service';
-import { environment } from '../../environments/environment';
+import { environment } from '../../environments/environment.prod';
 
 const BASE_URL = environment.backendUrl;
 const CHAT_PATH = environment.chatPath;
