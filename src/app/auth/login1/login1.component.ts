@@ -30,7 +30,6 @@ export class Login1Component implements OnInit {
   ngOnInit() {
 
     this.loginForm = this.formBuilder.group({
-      //controlname: ['initial value', rules]
       username: [
         '',
         [

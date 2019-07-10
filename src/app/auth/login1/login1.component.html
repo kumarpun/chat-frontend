@@ -1,26 +1,31 @@
-<div class="container">
-  <h2 class="page-header text-center">Login</h2>
+<div class="main-top-intro">
+  <div class="container-inner-info">
+  <h2>lets chat !!! </h2>
+  <br>
+<div class="content-w2layouts-main">
+  <div class="form-w3ls-left-info">
 
   <form [formGroup]="loginForm" (ngSubmit)="onLoginSubmit()">
 
-  <div class="form-group">
-    <label for="username">Username</label>
+  <div class="form-w3ls-left-info">
 
     <input type="text" name="username" class="form-control" id="username" placeholder="Username" formControlName="username" autofocus="true" />
   </div>
 
-  <div class="form-group">
-    <label for="password">Password</label>
+  <div class="form-w3ls-left-info">
 
     <input type="password" name="password" class="form-control" id="password" placeholder="Password" formControlName="password" >
   </div>
   
-  <div class="form-group">
-    <button [disabled]="loginForm.invalid" type="submit" class="btn btn-primary btn-block" name="login">Login</button>
+  <div class="bottom">
+    <button [disabled]="loginForm.invalid" type="submit" class="btn" name="login">Login</button>
   </div>
 
-  <div class="text-center">
-    <a [routerLink]="['/register']">Don't have an account?</a>
+  <div class="links">
+    <a [routerLink]="[]">Don't have an account?</a>
   </div>
 </form>
+</div>
+</div>
   </div>
+</div>
