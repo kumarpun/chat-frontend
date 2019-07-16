@@ -1,9 +1,20 @@
 <h1>Hi</h1>
 <p>You're logged!!!</p>
-
-<ul>
-    <li *ngFor="let user of users">
-      ({{user.email}} {{user.name}})
-        <a (click)="deleteUser(user.id)" class="text-danger">Delete</a>
-    </li>
-</ul>
+<section class="signup-form">
+<form>
+  <mat-form-field>
+    <input type="email" matInput placeholder="Your email">
+  </mat-form-field>
+  <br>
+<mat-form-field>
+  <input type="password" matInput placeholder="Password">
+</mat-form-field>
+</form>
+<section>
+  <section id="container">
+    <div id="child1" class="child"></div>
+    <div id="child2" class="child"></div>
+    <div id="child3" class="child"></div>
+  </section>
+</section>
+</section>

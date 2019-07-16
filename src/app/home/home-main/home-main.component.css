@@ -1,0 +1,11 @@
+#container {
+    display: flex;
+    width: 100%;
+}
+.child {
+width: 200px;
+height: 200px;
+}
+.signup-form {
+    width: 300px;
+}

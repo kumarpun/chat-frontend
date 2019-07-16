@@ -1,4 +1,37 @@
-.mine {
-    @include justify-content(flex-end);
-    text-align: right;
+.container{
+  min-width: 150px;
+  max-width: 100%;
+  width: 80%;
+  bottom: 20px;
   }
+.panel-body {
+ display: flex;
+
+}
+  .mine {
+    text-align: right;
+    display: flex;
+    padding-left: 200px;
+    padding-right: 10px;
+  }
+
+  .avatar {
+    height: 57px;
+    width: 50px;
+    padding-left: 0;
+    padding-right: 0px;
+  }
+
+  .msg-text-container {
+    font-weight: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+    .msg-text {
+      margin-top: 12px;
+    }
+  
+
+
+
+

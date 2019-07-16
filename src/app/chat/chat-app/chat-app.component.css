@@ -1,0 +1,10 @@
+.list-group-item {
+  margin-left:30px;
+    margin-right:10px;
+    display: flex;
+    max-width: 100%;
+    top: 80px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
