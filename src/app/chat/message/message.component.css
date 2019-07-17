@@ -10,7 +10,7 @@
 }
   .mine {
     text-align: right;
-    display: flex;
+    justify-content: flex-end;
     padding-left: 200px;
     padding-right: 10px;
   }

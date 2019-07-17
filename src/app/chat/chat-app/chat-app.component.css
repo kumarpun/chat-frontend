@@ -8,3 +8,33 @@
     left: 0;
     right: 0;
 }
+ul {
+  margin-top: 24px;
+  margin-bottom: 0;
+  height: calc(100vh - 194px);
+  overflow-y: scroll;
+}
+  
+
+  .list-group-item {
+    border-right: none;
+    border-left: none;
+  }
+    span.glyphicon-comment {
+      color: #4CAF50;
+    }
+
+    .online {
+      color: #4CAF50;
+    
+
+    }
+      span.glyphicon {
+        color: #4CAF50;
+       
+
+      }
+
+     
+ 
+
