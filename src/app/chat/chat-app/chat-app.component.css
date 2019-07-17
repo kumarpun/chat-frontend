@@ -7,6 +7,8 @@
     bottom: 0;
     left: 0;
     right: 0;
+    color: rgb(5, 5, 5);
+    
 }
 ul {
   margin-top: 24px;
@@ -25,7 +27,7 @@ ul {
     }
 
     .online {
-      color: #4CAF50;
+      color: rgb(240, 23, 23);
     
 
     }
@@ -34,7 +36,6 @@ ul {
        
 
       }
-
-     
- 
+      
+   
 
