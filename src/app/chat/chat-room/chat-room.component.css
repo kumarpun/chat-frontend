@@ -9,7 +9,7 @@
 {
     margin-bottom: 10px;
     padding-bottom: 5px;
-    border-bottom: 1px dotted #B3A9A9;
+    border-bottom: 1px dotted rgba(236, 233, 233, 0.89);
 }
 
 .chat li.left .chat-body
@@ -37,7 +37,7 @@
 .panel-body
 {
     overflow-y: scroll;
-    height: 250px;
+    height: 550px;
 }
 
 ::-webkit-scrollbar-track
@@ -135,3 +135,13 @@
         margin-left: 4px;
         font-size: 14px;
       }
+      .container-fluid {
+        background-color: rgb(243, 243, 241);
+        background-size: cover;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        background-attachment: fixed;
+        position: relative;
+        min-height: 100vh;   
+    }
+   

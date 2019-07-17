@@ -3,11 +3,13 @@
     <button type="button" arial-label="Toggle sidenav" mat-icon-button (click)="drawer.toggle()" color="primary">
       <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
     </button>
+    <span><img src="../../assets/img/mountain.png" class="img"></span>
     <span class="fill-remaining-space"></span>
   </mat-toolbar-row>
 </mat-toolbar>
 <mat-sidenav-container class="example-container">
     <mat-sidenav #drawer mode="side" opened role="navigation">
+      
       <mat-nav-list>
         <div>
           <a mat-list-item routerLink='/dashboard/home'><mat-icon mat-list-icon>home</mat-icon>Home</a>
@@ -32,3 +34,4 @@
       <router-outlet></router-outlet>
     </mat-sidenav-content>
   </mat-sidenav-container>
+  

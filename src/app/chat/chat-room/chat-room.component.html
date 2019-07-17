@@ -1,4 +1,5 @@
 <div class="container-fluid">
+    <div class="bg-layer">
   <div class="row">
     <div class="col-sm-3 col-lg-2 active-list-container" [ngClass]="{open: showActive}">
       <app-chat-app [users]="userList" [current]="chatWith" (newConv)="onNewConv($event)"></app-chat-app>
@@ -49,8 +50,5 @@
   </div>
 
 </div>
+</div>
 
-<audio id="notifSound" src="assets/audio/notification.mp3" type="audio/mpeg">
-<audio id="msgSound" src="assets/audio/message.mp3" type="audio/mpeg">
-
-</audio>

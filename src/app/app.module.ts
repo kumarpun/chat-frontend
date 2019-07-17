@@ -17,6 +17,9 @@ import { JwtInterceptor, ErrorInterceptor } from './helpers';
 import { Login1Component } from './auth/login1/login1.component';
 import { AuthService } from './services/chatt.service';
 import { ChatService } from './services/message1.service';
+import { NavComponent } from './nav/nav.component';
+import { LayoutModule } from '@angular/cdk/layout';
+import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule } from '@angular/material';
 
 
 @NgModule({
@@ -25,6 +28,7 @@ import { ChatService } from './services/message1.service';
     LoginComponent,
     DashboardComponent,
     Login1Component,
+    NavComponent,
 
   ],
   imports: [
@@ -35,7 +39,13 @@ import { ChatService } from './services/message1.service';
     FormsModule,
     HttpModule,
     BrowserAnimationsModule,
-    HttpClientModule
+    HttpClientModule,
+    LayoutModule,
+    MatToolbarModule,
+    MatButtonModule,
+    MatSidenavModule,
+    MatIconModule,
+    MatListModule
   ],
   providers: [
     AuthenticationService,

@@ -4,16 +4,31 @@
     min-height: 100%;
     width: 100%;
     min-width: 100%;
+
 }
     .fill-remaining-space {
         /* This fills the remaining space, by using flexbox. 
            Every toolbar row uses a flexbox row layout. */
         flex: 1 1 auto;
+        
+        
       }
       .toolbar-spacing{
         padding: 5px
     }
     
+    .img {
+        width: 80px;
+        height: 40px;
+        margin-top: 0;
+        margin-right: 53px;
+    }
+    
     .toolbar-font{
         font-size: 15px
     }
+    .container {
+        background: rgb(98, 223, 223);
+    }
+  
+  
