@@ -4,8 +4,6 @@
     min-height: 100%;
     width: 100%;
     min-width: 100%;
-
-
 }
     .fill-remaining-space {
         /* This fills the remaining space, by using flexbox. 
@@ -21,6 +19,7 @@
       .exampl {
         width: 200px;
         height: 800px;
+        background-color: white;
         background-size: cover;
      
 
@@ -31,20 +30,30 @@
         }
       
       .toolbar-spacing{
-        padding: 5px
+        padding: 2px
     }
     
     .img {
         width: 135px;
-        height: 60px;
+        height: 50px;
         margin-top: 0;
         margin-right: 53px;
     }
     
     .toolbar-font{
-        font-size: 15px
+        font-size: 10px
     }
     .container {
     }
-  
+  .list-items {
+    border: 1px solid rgb(240, 236, 236);
+    display: -webkit-flex; /* Safari */
+    display: flex;
+  }
+  .list-items1 {
+    border: 1px solid rgb(240, 236, 236);
+    display: -webkit-flex; /* Safari */
+    display: flex;
+    margin-top: -8px;
+  }
   
