@@ -5,6 +5,7 @@
     width: 100%;
     min-width: 100%;
 
+
 }
     .fill-remaining-space {
         /* This fills the remaining space, by using flexbox. 
@@ -13,14 +14,15 @@
         
       }
       .cont {
-        background: white;
         color: white;
+        background: white;
 
       }
       .exampl {
-        width: 230px;
-        color: #ffffff;
-        background-image: url('../../assets/finals.jpg');
+        width: 200px;
+        height: 800px;
+        background-size: cover;
+     
 
       }
       .example1 {
@@ -43,7 +45,6 @@
         font-size: 15px
     }
     .container {
-        background: rgb(218, 243, 243);
     }
   
   
