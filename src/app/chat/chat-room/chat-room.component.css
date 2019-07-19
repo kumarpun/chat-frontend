@@ -3,11 +3,14 @@
   margin-left:280px;
   margin-right:10px;
   position: absolute;
-  max-width: 100%;
-  top: 22px;
+  max-width: 950px;
+  max-height: 630px;
+  top: 30px;
   bottom: 0;
   left: 0;
   right: 0;
+  border-left: 3px solid white;
+  height: 1200px;
 }
 
 .active-list-container {
@@ -67,7 +70,7 @@
         border: 1px solid #ccc;
         border-radius: 4px;
         box-sizing: border-box;
-        margin-top: -5px;
+        margin-top: -15px;
         font-size: 12px;
       }
     
