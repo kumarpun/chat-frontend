@@ -1,4 +1,4 @@
-import {  OnInit, ElementRef, OnDestroy, Component } from '@angular/core';
+import {  OnInit, ElementRef, OnDestroy, Component, ViewChild } from '@angular/core';
 import {
   FormGroup,
   FormBuilder,
@@ -30,6 +30,7 @@ export class ChatRoomComponent implements OnInit, OnDestroy {
   conversationId: string;
   notify: boolean;
   notification: any = { timeout: null };
+  message: string;
 
   constructor(
     public route: ActivatedRoute,
@@ -197,9 +198,9 @@ export class ChatRoomComponent implements OnInit, OnDestroy {
     newMessage.mine = true;
     this.noMsg = false;
     this.messageList.push(newMessage);
+    this.sendForm.setValue({ message: '' })
     this.scrollToBottom();
     this.msgSound();
-    this.sendForm.setValue({ message: '' });
   }
 
   checkMine(message: Message): void {

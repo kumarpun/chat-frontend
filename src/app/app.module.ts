@@ -20,6 +20,7 @@ import { ChatService } from './services/message1.service';
 import { NavComponent } from './nav/nav.component';
 import { LayoutModule } from '@angular/cdk/layout';
 import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule } from '@angular/material';
+import { RegisterComponent } from './auth/register/register.component';
 
 
 @NgModule({
@@ -29,6 +30,7 @@ import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, Mat
     DashboardComponent,
     Login1Component,
     NavComponent,
+    RegisterComponent,
 
   ],
   imports: [

@@ -71,3 +71,21 @@ h2 {
 .content {
  color: #fff;
 }
+
+button.btnreg {
+    margin-left: 110px;
+    background: #4cc2c4;
+    margin-top: -38px;
+}
+.btnreg{
+    background: #00BCD4;
+    padding: 0.61em 1.3em;
+    transition: 0.5s all;
+    font-size: 14px;
+    color: #fff;
+    display: block;
+    border-radius: 0px;
+    letter-spacing: 1px;
+    border: 2px solid #00BCD4;
+}
+  

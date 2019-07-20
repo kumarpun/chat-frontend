@@ -48,8 +48,16 @@ export class Login1Component implements OnInit {
         this.authService.storeUserData(data.token, data.user);
         this.chatService.connect(data.user.username);
         this.router.navigate(['/dashboard']);
+        this.snackbar.open('Successfully Loggedin', 'Close', {
+          duration: 3000,
+        });
+      } else {
+        this.loading = false;
+        this.snackbar.open('Username/password invalid', 'Close', {
+          duration: 3000,
+        });
+        this.loginForm.reset();
       }
     });
-
 }
 }
