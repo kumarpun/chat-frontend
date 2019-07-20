@@ -226,13 +226,10 @@ export class ChatRoomComponent implements OnInit, OnDestroy {
 
   notifSound(): void {
     let sound: any = this.el.nativeElement.querySelector('#notifSound');
-    sound.play();
   }
 
   msgSound(): void {
     let sound: any = this.el.nativeElement.querySelector('#msgSound');
-    sound.load();
-    sound.play();
   }
 
   scrollToBottom(): void {

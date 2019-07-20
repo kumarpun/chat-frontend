@@ -11,6 +11,14 @@
   <input type="password" name="password" class="form-control" id="password" placeholder="Password"
   formControlName="password">
 </div>
-
+<div class="form-group">
+  <label for="confirmPass">Confirm password</label>
+  <input type="password" name="confirmPass" class="form-control" id="confirmPass" placeholder="Confirm password"
+  formControlName="confirmPass" >
+</div>
+  <div class="form-group">
+    <button [disabled]="registerForm.invalid" type="submit" class="btn btn-primary" name="register">Register</button>
+  </div>
+  <a [routerLink]="['/login1']">Already have an account? Login here</a>
   </form>
   </div>
